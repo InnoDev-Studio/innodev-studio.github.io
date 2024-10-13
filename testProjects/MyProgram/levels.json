@@ -1,0 +1,166 @@
+{
+  "levels": [
+    {
+      "title": "Beginner",
+      "description": "A set of basic coding questions to get you started.",
+      "games": [
+        {
+          "title": "Introduction to Variables",
+          "description": "Test your knowledge of variables in Python.",
+          "image_url": "https://example.com/variables.png",
+          "correct_answer_id": 1,
+          "answers": [
+            {
+              "id": 1,
+              "value": "A variable is a way to store information."
+            },
+            {
+              "id": 2,
+              "value": "A variable is a type of loop."
+            },
+            {
+              "id": 3,
+              "value": "A variable is a condition."
+            },
+            {
+              "id": 4,
+              "value": "A variable is a function."
+            }
+          ]
+        },
+        {
+          "title": "Basic Data Types",
+          "description": "Understand the different data types in Python.",
+          "image_url": "https://example.com/data_types.png",
+          "correct_answer_id": 3,
+          "answers": [
+            {
+              "id": 1,
+              "value": "Boolean, Character, Object"
+            },
+            {
+              "id": 2,
+              "value": "String, Array, Dictionary"
+            },
+            {
+              "id": 3,
+              "value": "Integer, String, Boolean"
+            },
+            {
+              "id": 4,
+              "value": "List, Set, Class"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Intermediate",
+      "description": "Challenge your coding knowledge with these intermediate-level questions.",
+      "games": [
+        {
+          "title": "Loops in Python",
+          "description": "Check your understanding of loops and iterations.",
+          "image_url": "https://example.com/loops.png",
+          "correct_answer_id": 2,
+          "answers": [
+            {
+              "id": 1,
+              "value": "A for loop only runs once."
+            },
+            {
+              "id": 2,
+              "value": "A while loop runs until a condition is false."
+            },
+            {
+              "id": 3,
+              "value": "A loop must have an else clause."
+            },
+            {
+              "id": 4,
+              "value": "A loop is always infinite."
+            }
+          ]
+        },
+        {
+          "title": "Functions in JavaScript",
+          "description": "Test your knowledge on functions and how they work in JavaScript.",
+          "image_url": "https://example.com/functions.png",
+          "correct_answer_id": 4,
+          "answers": [
+            {
+              "id": 1,
+              "value": "Functions don't return values."
+            },
+            {
+              "id": 2,
+              "value": "Functions are only used once."
+            },
+            {
+              "id": 3,
+              "value": "Functions must always have parameters."
+            },
+            {
+              "id": 4,
+              "value": "Functions can return values using the return keyword."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "description": "Test your skills with advanced coding questions.",
+      "games": [
+        {
+          "title": "Recursion",
+          "description": "Understanding recursion and its applications.",
+          "image_url": "https://example.com/recursion.png",
+          "correct_answer_id": 1,
+          "answers": [
+            {
+              "id": 1,
+              "value": "Recursion is a function that calls itself."
+            },
+            {
+              "id": 2,
+              "value": "Recursion is a loop that runs indefinitely."
+            },
+            {
+              "id": 3,
+              "value": "Recursion is the use of external libraries."
+            },
+            {
+              "id": 4,
+              "value": "Recursion is a way to optimize code."
+            }
+          ]
+        },
+        {
+          "title": "Asynchronous Programming",
+          "description": "Deep dive into asynchronous functions and promises.",
+          "image_url": "https://example.com/async.png",
+          "correct_answer_id": 3,
+          "answers": [
+            {
+              "id": 1,
+              "value": "Asynchronous code is faster than synchronous code."
+            },
+            {
+              "id": 2,
+              "value": "Asynchronous functions cannot return values."
+            },
+            {
+              "id": 3,
+              "value": "Asynchronous code allows tasks to run in the background."
+            },
+            {
+              "id": 4,
+              "value": "Asynchronous code blocks other code from running."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
