@@ -1,0 +1,189 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full-screen styling */
+  body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+  }
+  
+  /* Background Photo */
+  #background-photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('back.jpg'); /* Replace 'your-image.jpg' with the path to your loved one's photo */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Subtle opacity for readability */
+    z-index: 0;
+    filter: blur(4.5px);
+    animation: backgroundMovement 20s infinite alternate ease-in-out; /* Smooth rotation, zoom, and shake */
+  }
+  
+  /* Particle background */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  /* Container for centering the content */
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+  
+  /* Message styling */
+  .message {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: textFadeInOut 6s infinite, shake 0.5s infinite;
+  }
+  
+  .message h1 {
+    animation: colorChange 8s infinite, textScale 3s infinite;
+  }
+  
+  /* Heart animation */
+  .heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #ff4081, #ff6f61);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: heartPulse 1.5s infinite, heartSwing 3s infinite alternate;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Emoji container */
+  .emoji-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .emoji {
+    font-size: 5rem;
+    position: absolute;
+    animation: fly 10s linear infinite;
+  }
+  
+  /* Keyframes for background movement */
+  @keyframes backgroundMovement {
+    0% {
+      transform: scale(1) rotate(0deg) translate(0, 0);
+    }
+    25% {
+      transform: scale(1.05) rotate(1deg) translate(-2px, 2px);
+    }
+    50% {
+      transform: scale(1.1) rotate(2deg) translate(2px, -2px);
+    }
+    75% {
+      transform: scale(1.05) rotate(-1deg) translate(-2px, -2px);
+    }
+    100% {
+      transform: scale(1) rotate(0deg) translate(0, 2px);
+    }
+  }
+  
+  /* Animation for fading in and out */
+  @keyframes textFadeInOut {
+    0%, 100% { opacity: 0; transform: translateY(-20px); }
+    20%, 80% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Shake animation */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+  }
+  
+  /* Pulse animation for heart */
+  @keyframes heartPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  /* Swing animation for heart */
+  @keyframes heartSwing {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(10deg); }
+  }
+  
+  /* Emoji fly animation */
+  @keyframes fly {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Color change for message */
+  @keyframes colorChange {
+    0% { color: #ff66b2; }
+    33% { color: #ffd700; }
+    66% { color: #ff4081; }
+    100% { color: #ff66b2; }
+  }
+  
+  /* Text scaling effect */
+  @keyframes textScale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+    .message {
+        font-size: 3rem; /* Smaller font size for mobile */
+        text-align: center;
+    }
+    
+    #background-photo {
+        animation: zoomBackground 20s infinite; /* Slower zoom effect */
+    }
+    
+    .emoji {
+        font-size: 1.5rem; /* Smaller emoji size for mobile */
+        animation-duration: 10s; /* Adjust emoji animation duration for mobile */
+    }
+}
+  
+  /* Randomize positions for emojis */
+  .emoji:nth-child(1) { left: 10%; animation-duration: 8s; }
+  .emoji:nth-child(2) { left: 30%; animation-duration: 10s; animation-delay: 2s; }
+  .emoji:nth-child(3) { left: 50%; animation-duration: 12s; animation-delay: 4s; }
+  .emoji:nth-child(4) { left: 70%; animation-duration: 9s; animation-delay: 1s; }
+  .emoji:nth-child(5) { left: 90%; animation-duration: 11s; animation-delay: 3s; }
+  
