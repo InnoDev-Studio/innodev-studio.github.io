@@ -30,7 +30,7 @@ document.getElementById("generate-url").addEventListener("click", function () {
 
 function createURL(message, photoData) {
     const encodedMessage = encodeURIComponent(message);
-    const url = `file:///p%3A/LoveWeb/index.html?msg=${message}&photo=${photoData}`;
+    const url = `https://innodev-studio.github.io/Projects/love/?msg=${message}&photo=${photoData}`;
     // Display only the first 200 characters followed by '...' if the URL is longer than 200 characters
     const displayedUrl = url.length > 100 ? url.substring(0, 100) + '...' : url;
 
